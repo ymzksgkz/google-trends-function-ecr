@@ -4,6 +4,7 @@
     "strict": true,
     "preserveConstEnums": true,
     "sourceMap": true,
+    "baseUrl": ".",
     "rootDir": "./src",
     "outDir": "./dist",
     "inlineSourceMap": false,
@@ -13,9 +14,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts"],
+  "include": ["./src/**/*.ts"],
   "exclude": ["node_modules", "**/*.test.ts", "jest.config.ts"]
 }
