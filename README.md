@@ -20,7 +20,12 @@ TODO リポジトリ削除コマンド
 # Install AWS CLI
 https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html
 
+# Install
+```shell
+npx husky-init && yarn
+```
+
 # Test
 ```shell
-
+yarn test
 ```
