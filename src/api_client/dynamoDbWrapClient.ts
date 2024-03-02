@@ -11,5 +11,6 @@ export default class DynamoDbWrapClient {
 
   async put(putCommand: PutCommand) {
     await this.docClient.send(putCommand)
+    console.log(123)
   }
 }
