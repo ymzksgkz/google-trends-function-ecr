@@ -22,7 +22,7 @@ https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.h
 
 # Install
 ```shell
-npx husky-init && yarn
+yarn
 ```
 
 # Test
