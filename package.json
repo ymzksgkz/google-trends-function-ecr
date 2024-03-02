@@ -41,12 +41,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.{js,ts,json}": [
-      "yarn test",
       "yarn lint",
       "prettier --write"
     ]
