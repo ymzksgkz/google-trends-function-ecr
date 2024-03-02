@@ -2,7 +2,7 @@ import { DynamoDBClient } from '@aws-sdk/client-dynamodb'
 import { DynamoDBDocumentClient, PutCommand } from '@aws-sdk/lib-dynamodb'
 
 export default class DynamoDbWrapClient {
-            private docClient: DynamoDBDocumentClient
+              private docClient: DynamoDBDocumentClient
 
   constructor() {
     const dynamoDbClient = new DynamoDBClient({})
