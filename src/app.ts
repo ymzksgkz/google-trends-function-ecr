@@ -1,8 +1,8 @@
 import { DbItemExpires, GoogleTrends, TrendsItem } from '@/types'
-import GoogleTrendsApiClient from '@/api_client/googleTrendsClient'
+import GoogleTrendsApiClient from '@/client/googleTrendsApiClient'
 import dayjs from 'dayjs'
 import { PutCommand } from '@aws-sdk/lib-dynamodb'
-import DynamoDbWrapClient from '@/api_client/dynamoDbWrapClient'
+import DynamoDbWrapClient from '@/client/dynamoDbWrapClient'
 
 const fetchGoogleTrends = async () => {
   const apiClient = new GoogleTrendsApiClient()
@@ -15,7 +15,7 @@ const fetchGoogleTrends = async () => {
 
 const saveTrends = async (googleTrends: GoogleTrends) => {
   const stories = googleTrends.storySummaries.trendingStories
-  const interval = 200
+  const interval = 1000
   const day = dayjs()
   const postDate = day.format('YYYY-MM-DD')
   const createdAt = day.toISOString()

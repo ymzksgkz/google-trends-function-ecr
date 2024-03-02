@@ -3,7 +3,7 @@ export default {
     '^.+\\.ts?$': 'ts-jest'
   },
   moduleNameMapper: {
-    '^@api/(.*)$': '<rootDir>/src/api_client/$1',
+    '^@api/(.*)$': '<rootDir>/src/client/$1',
     '^@/(.*)$': '<rootDir>/src/$1'
   },
   clearMocks: true,

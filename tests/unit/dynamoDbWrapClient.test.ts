@@ -1,5 +1,5 @@
 import { describe, it, expect, jest, beforeEach } from '@jest/globals'
-import DynamoDbWrapClient from '@/api_client/dynamoDbWrapClient'
+import DynamoDbWrapClient from '@/client/dynamoDbWrapClient'
 import { PutCommand } from '@aws-sdk/lib-dynamodb'
 
 const mockSend = jest.fn().mockImplementation(() => Promise.resolve(null))

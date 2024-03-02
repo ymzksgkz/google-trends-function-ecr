@@ -11,8 +11,7 @@ export default class GoogleTrendsApiClient {
       }
     })
 
-    // this.url = 'https://trends.google.com/trends/api/realtimetrends'
-    this.url = 'https://my-json-server.typicode.com/ymzksgkz/dummy/members'
+    this.url = 'https://trends.google.com/trends/api/realtimetrends'
   }
 
   async fetchGoogleTrends() {

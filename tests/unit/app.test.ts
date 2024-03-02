@@ -1,10 +1,10 @@
 import { lambdaHandler } from '@/app'
 import { describe, it } from '@jest/globals'
-import GoogleTrendsApiClient from '@/api_client/googleTrendsClient'
-import DynamoDbWrapClient from '../../src/api_client/dynamoDbWrapClient'
+import GoogleTrendsApiClient from '@/client/googleTrendsApiClient'
+import DynamoDbWrapClient from '@/client/dynamoDbWrapClient'
 import { AxiosResponse } from 'axios'
 
-jest.mock('@api/googleTrendsClient')
+jest.mock('@api/googleTrendsApiClient')
 const googleTrendsClientMock = GoogleTrendsApiClient as jest.Mock
 jest.mock('@api/dynamoDbWrapClient')
 const dynamoDbClientMock = DynamoDbWrapClient as jest.Mock
