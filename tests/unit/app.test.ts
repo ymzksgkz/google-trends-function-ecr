@@ -1,13 +1,13 @@
 import { lambdaHandler } from '@/app'
 import { describe, it } from '@jest/globals'
 import GoogleTrendsApiClient from '@/api_client/googleTrendsClient'
-import DynamoDbClient from '@/api_client/dynamoDbClient'
+import DynamoDbWrapClient from '../../src/api_client/dynamoDbWrapClient'
 import { AxiosResponse } from 'axios'
 
 jest.mock('@api/googleTrendsClient')
 const googleTrendsClientMock = GoogleTrendsApiClient as jest.Mock
-jest.mock('@api/dynamoDbClient')
-const dynamoDbClientMock = DynamoDbClient as jest.Mock
+jest.mock('@api/dynamoDbWrapClient')
+const dynamoDbClientMock = DynamoDbWrapClient as jest.Mock
 
 describe('Unit test for app handler', () => {
   it('Verifies successful response', async () => {
