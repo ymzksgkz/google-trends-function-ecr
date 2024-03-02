@@ -43,10 +43,5 @@
     "hooks": {
       "pre-push": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,json}": [
-      "yarn lint"
-    ]
   }
 }
