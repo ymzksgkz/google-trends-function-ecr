@@ -34,8 +34,7 @@ const saveTrends = async (googleTrends: GoogleTrends) => {
     }
 
     const putCommand = new PutCommand({
-      // TODO テーブル名ベタ書き修正
-      TableName: 'googleTrendsStaging',
+      TableName: 'googleTrends',
       Item: item
     })
 

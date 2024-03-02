@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ESNext",
     "strict": true,
     "preserveConstEnums": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "baseUrl": ".",
     "rootDir": "./src",
     "outDir": "./dist",
     "inlineSourceMap": false,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["./src/**/*.ts"],
